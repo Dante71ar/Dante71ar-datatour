@@ -1,1 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Tour — Soluciones integrales para tus viajes y eventos</title>
+  <meta name="description" content="Aéreos, paquetes, traslados, posadas y organización de grupos para eventos y convenciones. Atención en español y portugués." />
+  <style>
+    :root{
+      --bg:#0b132b;--panel:#101a39;--ink:#ffffff;--mut:#afbdd6;--acc:#22d1ee;--acc2:#2ec4b6;--line:#1a2648
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    a{color:inherit}
+    .wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;background:rgba(11,19,43,.85);backdrop-filter:saturate(180%) blur(6px);border-bottom:1px solid var(--line);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800}
+    .logo{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2))}
+    .menu a{opacity:.85;text-decoration:none;margin-left:18px}
+    .menu a:hover{opacity:1}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;padding:42px 0}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px}
+    h1{font-size:42px;line-height:1.15;margin:.2em 0}
+    .mut{color:var(--mut)}
+    .cta{display:inline-block;margin-top:10px;background:var(--acc);color:#001219;text-decoration:none;padding:12px 18px;border-radius:999px;font-weight:700}
+    .badges{margin-top:8px}
+    .badge{display:inline-block;background:#122148;color:var(--acc);border:1px solid #1b2a50;border-radius:999px;padding:4px 10px;font-size:12px;margin:4px 6px 0 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .section{padding:14px 0 40px}
+    .section h2{margin:0 0 10px}
+    .services li{margin:8px 0}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .gallery img{width:100%;height:180px;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
+    footer{color:var(--mut);border-top:1px solid var(--line);padding:22px 0 60px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><div class="logo" aria-hidden="true"></div><div>Data Tour</div></div>
+      <nav class="menu">
+        <a href="#servicios">Servicios</a>
+        <a href="#posada">Posada</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="card">
+        <span class="badge">Argentina · Brasil</span>
+        <h1>Somos parte de tu viaje</h1>
+        <p class="mut">Aéreos, alojamiento, traslados, posadas y organización de grupos para eventos y convenciones. Atención personalizada en español y portugués.</p>
+        <a class="cta" href="#contacto">Escribinos por WhatsApp</a>
+        <div class="badges">
+          <span class="badge">Asesoría 1:1</span>
+          <span class="badge">Pagos flexibles</span>
+          <span class="badge">Check‑in online</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3 id="servicios">Servicios</h3>
+        <ul class="services">
+          <li>Emisión de tickets y web check‑in</li>
+          <li>Paquetes a <strong>Búzios, Brasil</strong> y otros destinos</li>
+          <li>Traslados in/out y experiencias</li>
+          <li>Grupos cerrados para empresas, capacitaciones y convenciones</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="posada">
+      <div class="grid">
+        <div class="card">
+          <h2>Posada Ana Elena do Mar · Búzios</h2>
+          <p class="mut">Bosque de Geribá, a 300 m del mar. Desayuno buffet, naturaleza y atención personalizada.</p>
+          <a class="cta" href="#contacto">Consultar disponibilidad</a>
+        </div>
+        <div class="card">
+          <h2>Próximamente</h2>
+          <p class="mut">Reserva online, vouchers PDF y panel de cliente integrado.</p>
+        </div>
+        <div class="card">
+          <h2>Destinos</h2>
+          <div class="gallery" aria-label="Galería referencial">
+            <img alt="Playa" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?q=80&w=1200&auto=format&fit=crop"/>
+            <img alt="Ciudad" src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?q=80&w=1200&auto=format&fit=crop"/>
+            <img alt="Selva y mar" src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1200&auto=format&fit=crop"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="wrap">
+      <p><strong>Contacto</strong></p>
+      <p class="mut">WhatsApp: +54 9 11 3862 0519 · Email: contacto@datatour.com.ar</p>
+      <p class="mut">Instagram: @pousadaanalenadomar · @ddpseguros</p>
+      <p>&copy; <span id="y"></span> Data Tour — Viajes que cambian tu vida.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
 
